@@ -23,6 +23,10 @@ class Artist
     Song.all.select{|s| s.artist == self}
   end
 
+  def genres
+    Song.all.select{|s| s.genre == self}
+  end
+
   def new_song(name, genre)
     Song.new(name, self, genre)
     binding.pry
