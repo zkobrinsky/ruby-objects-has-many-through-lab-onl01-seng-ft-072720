@@ -6,7 +6,7 @@ class Artist
 
   @@all = []
 
-  def initialize(name)
+  def initialize(name, genre)
     @name = name
     save
   end
@@ -17,6 +17,10 @@ class Artist
 
   def self.all
     @@all
+  end
+
+  def new_song(name, genre)
+    
   end
 
   def songs
