@@ -19,9 +19,12 @@ class Song
     @@all
   end
 
-  def artists
-    Artist.all.select{|a| a.song == self}
+  def artist
+    self.artist
   end
+  
+
+
 
 
 
